@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/theme/colors.scss';
+@import '../../assets/theme/colors.scss';
 .trends-item{
     padding: 1rem;
     border-top: $border-dark;

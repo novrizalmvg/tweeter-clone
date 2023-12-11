@@ -34,7 +34,7 @@
     <div class="layout-for-you">
       <div class="layout-for-you-fixed">
         <SearchBar />
-        <!-- <Trends /> -->
+        <Trends />
       </div>
     </div>
     <tweet-popup v-if="getTweetPopupState" />
@@ -53,7 +53,7 @@
 
 <script>
 import Sidebar from '../components/Sidebar/index.vue'
-// import Trends from '../components/Trends'
+import Trends from '../components/Trends/index.vue'
 import SearchBar from '../components/SearchBar.vue'
 import BaseIcon from '../components/BaseIcon/index.vue'
 // import TweetPopup from '../components/TweetPopup.vue'
@@ -66,7 +66,7 @@ export default {
     Sidebar,
     //  TweetPopup,
     BaseIcon,
-    //  Trends,
+     Trends,
     SearchBar,
     // Lightbox
   },

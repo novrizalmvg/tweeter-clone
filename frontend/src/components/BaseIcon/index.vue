@@ -13,26 +13,21 @@ export default {
   },
   data() {
     return {
-      iconComponent: null // Initialize iconComponent as null
+      iconComponent: null // Set a default value to null
     };
   },
-  created() {
-    this.loadIconComponent();
+  async created() {
+    this.iconComponent = await this.loadIconComponent(); // Load the icon component asynchronously
   },
-//   computed: {
-//     iconComponent(){
-//       return require(`./icons/${this.icon}`).default
-//     }
-//   }
   methods: {
     async loadIconComponent() {
-    //   try {
-    //     const iconModule = await import(`./icons/${this.icon}`);
-    //     this.iconComponent = iconModule.default;
-    //   } catch (error) {
-    //     console.error('Error while loading component:', error);
-    //     // Handle the error gracefully, set a default component, etc.
-    //   }
+      try {
+        const iconModule = await import(`./icons/${this.icon}.vue`);
+        return iconModule.default;
+      } catch (error) {
+        console.error('Error while loading icon component:', error);
+        return null;
+      }
     }
   }
 }

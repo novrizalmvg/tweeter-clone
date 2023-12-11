@@ -23,7 +23,7 @@ import { trends } from '../../services/mockdata'; -->
 
 <script>
 import TrendsItem from './Item.vue'
-import { getTrends } from './services/api'
+import { getTrends } from '../../services/api.js'
 
 export default {
     name: 'Trends',
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/theme/colors.scss';
+@import '../../assets/theme/colors.scss';
 .trends{
     background-color: rgba($color: $color-dark-gray, $alpha: 0.1);
     border-radius: 1rem;

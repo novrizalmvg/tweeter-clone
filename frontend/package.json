@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rollup/wasm-node": "^4.8.0",
     "axios": "^0.21.1",
     "axios-mock-adapter": "^1.22.0",
     "core-js": "^3.6.5",
