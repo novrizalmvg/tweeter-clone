@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import SidebarItem from './Item.vue'
+import SidebarItem from './Items.vue'
 import { ROUTES } from './constants.js'
 import BaseIcon from '../BaseIcon/index.vue'
 import ProfilePopup from './ProfilePopup.vue'
