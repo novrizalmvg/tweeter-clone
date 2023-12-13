@@ -54,8 +54,13 @@
             </div>
           </div>
           <div class="controls-submit">
+            <!-- <button
+              :disabled="!tweetContent.isTweet"
+              @click="handleSubmit"
+            >
+              Tweet
+            </button> -->
             <button
-              :disabled="!hasTweetText()||tweetContent.isTweet"
               @click="handleSubmit"
             >
               Tweet
@@ -141,7 +146,7 @@
     },
     watch: {
       'tweetContent.text': function(val){
-        this.isTweet = val.length > 0
+        this.tweetContent.isTweet = val.length > 0
       }
     },
     computed:{
