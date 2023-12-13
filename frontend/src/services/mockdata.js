@@ -6,12 +6,12 @@ const userData = [
         username: '@novrizal',
         password: 'password',
         profile: {
-            pic: 'https://pbs.twimg.com/profile_images/1344794962697793537/GYEm82zC_normal.jpg',
-            pic_full: 'https://pbs.twimg.com/profile_images/1344794962697793537/GYEm82zC_400x400.jpg',
-            pic_cover: 'https://pbs.twimg.com/profile_banners/1142171408916762624/1605471218/1500x500',
+            pic: 'https://api.duniagames.co.id/api/content/upload/file/184568161671541288.jpg',
+            pic_full: 'https://api.duniagames.co.id/api/content/upload/file/184568161671541288.jpg',
+            pic_cover: 'https://i.pinimg.com/originals/49/89/70/498970d2f45988eae9d6a2eb59bc450f.jpg',
             description: 'Somedescription goes there...',
             nickname: '@novrizal',
-            name: 'Kaan Ersoy',
+            name: 'Novrizal',
             website: 'https://novrizal.com'
         },
         account: {

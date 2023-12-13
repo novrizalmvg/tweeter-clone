@@ -55,7 +55,7 @@
           </div>
           <div class="controls-submit">
             <button
-              :disabled="!hasTweetText()"
+              :disabled="!hasTweetText()||tweetContent.isTweet"
               @click="handleSubmit"
             >
               Tweet
@@ -88,6 +88,7 @@
       const $notification = app.parent.appContext.config.globalProperties.$notification;
       function defaultTweetContent(){
         return {
+          isTweet: false,
           text: '',
           imageList: []
         }
@@ -136,6 +137,11 @@
         hasTweetText,
         showFiles,
         deleteImage
+      }
+    },
+    watch: {
+      'tweetContent.text': function(val){
+        this.isTweet = val.length > 0
       }
     },
     computed:{

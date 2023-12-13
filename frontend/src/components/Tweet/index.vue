@@ -1,7 +1,7 @@
 <template>
     <div class="tweet">
       <div class="tweet-owner">
-        <img src="https://pbs.twimg.com/profile_images/1344794962697793537/GYEm82zC_normal.jpg">
+        <img :src="tweetData.author.profile.pic">
       </div>
       <div class="tweet-content">
         <div class="tweet-content-header">
@@ -193,8 +193,8 @@
       background-color: rgba($color: $color-dark-gray, $alpha: 0.2);
     }
     &-owner{
-      min-width: 3rem;
-      min-height: 3rem;
+      width: 3rem;
+      height: 3rem;
       img{
         width: 100%;
         border-radius: 999px;
