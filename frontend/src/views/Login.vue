@@ -52,7 +52,7 @@ export default {
   data: function () {
     return {
       userInfo: {
-        username: "@kaanersoy",
+        username: "@novrizal",
         password: "password",
       },
     };

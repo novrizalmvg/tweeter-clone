@@ -70,8 +70,8 @@
   import { ref , getCurrentInstance} from 'vue'
   import BaseIcon from '../BaseIcon/index.vue'
   import { mapGetters } from 'vuex'
-  import Tweet from '../../models/Tweet'
-  import User from '../../models/User'
+  import Tweet from '../../models/Tweet.js'
+  import User from '../../models/User.js'
   import {uploadTweet} from '../../services/api'
   import { useStore } from 'vuex'
   
@@ -86,7 +86,6 @@
   
       const app = getCurrentInstance();
       const $notification = app.parent.appContext.config.globalProperties.$notification;
-  
       function defaultTweetContent(){
         return {
           text: '',

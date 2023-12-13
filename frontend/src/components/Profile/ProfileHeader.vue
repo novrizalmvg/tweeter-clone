@@ -56,7 +56,7 @@
 import { mapGetters } from 'vuex'
 import moment from 'moment'
 import {getMe} from '../../services/api'
-import BaseIcon from './components/BaseIcon'
+import BaseIcon from '../BaseIcon/index.vue'
 
 export default {
     name: 'ProfileHeader',
@@ -64,7 +64,7 @@ export default {
         BaseIcon
     },
     computed:{
-        ...napGetters({
+        ...mapGetters({
             getMyProfileId: 'getMyProfileId',
             me: 'getMe'
         }),

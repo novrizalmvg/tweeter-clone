@@ -7,12 +7,12 @@
         class="tweet-wrapper"
         >
        
-        <!-- <tweet
+        <tweet
         v-for="tweet in tweetData"
         :key="tweet.id"
         :tweet-data="tweet"
         @delete-tweet="handleTweetDelete"
-        /> -->
+        />
     </div>
     </div>
 </template>

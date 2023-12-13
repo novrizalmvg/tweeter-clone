@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import BaseIcon from './components/BaseIcon'
+import BaseIcon from '../BaseIcon/index.vue'
 
 export default {
     name: 'Notification',
@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/theme/colors.scss';
+@import '../../assets/theme/colors.scss';
 
 .notification{
     position: fixed;

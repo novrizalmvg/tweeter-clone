@@ -12,6 +12,11 @@ const routes = [
     name: "Home",
     component: () => import('../views/Home.vue'),
   },
+  {
+    path: '/:profileId',
+    name: 'Profile',
+    component: () => import('../views/Profile.vue'),
+  },
 ];
 
 const router = createRouter({

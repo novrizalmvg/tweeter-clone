@@ -4,7 +4,7 @@
             <div class="sections-item active">
                 Tweet
             </div>
-            <div class="sctions-item">
+            <div class="sections-item">
                 Tweets & replies
             </div>
             <div class="sections-item">
@@ -29,8 +29,8 @@
 </template>
 
 <script>
-import { getUserTweets } from '../../services/api'
-import Tweet from './components/Tweet'
+import { getUserTweets } from '../../services/api.js'
+import Tweet from '../Tweet/index.vue'
 import { mapGetters } from 'vuex'
 export default {
     name: 'ProfileBody',

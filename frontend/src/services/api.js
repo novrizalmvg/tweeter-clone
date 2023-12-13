@@ -94,7 +94,7 @@ export async function updateTweet(body){
     return request({type: 'patch', path: '/tweets', body})
 }
 
-export async function getUsersTweets(body){
+export async function getUserTweets(body){
     return request({type: 'get', path: `/tweets/${body.id}`})
 }
 

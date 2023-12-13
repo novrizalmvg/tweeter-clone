@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import BaseIcon from './components/BaseIcon'
+import BaseIcon from '../BaseIcon/index.vue'
 import { mapGetters } from 'vuex';
 
 export default {
@@ -122,7 +122,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/theme/colors.scss';
+@import '../../assets/theme/colors.scss';
 
 .edit-profile-popup{
     position: fixed;

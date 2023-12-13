@@ -2,12 +2,12 @@
   <component :is="getLoginStatus ? 'layout' : 'div'">
     <router-view />
     <loading v-if="getLoadingStatus" />
-    <!-- <notification
+    <notification
     v-for="(notification,i) in getActiveNotifications"
     :key="i"
     :index="i"
     :data="notification"
-    /> -->
+    />
   </component>
 </template>
 
@@ -15,14 +15,14 @@
 import 'normalize.css'
 import Layout from './views/Layout.vue'
 import Loading from './components/Loading.vue'
-// import Notification from './components/Notification.vue'
+import Notification from './components/Notification/index.vue'
 import { mapGetters } from 'vuex'
 
 export default {
   components: {
     Layout,
     Loading,
-    // Notification
+    Notification
   },
   data() {
     return {
