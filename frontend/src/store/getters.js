@@ -24,6 +24,7 @@ export default {
         return state.profileTweetCount
     },
     getLightboxState(state){
+        console.log('apaaa', state)
         return state.lightbox
     },
     getMobileMenuState(state){

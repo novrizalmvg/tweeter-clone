@@ -56,19 +56,19 @@ import Sidebar from '../components/Sidebar/index.vue'
 import Trends from '../components/Trends/index.vue'
 import SearchBar from '../components/SearchBar.vue'
 import BaseIcon from '../components/BaseIcon/index.vue'
-//  import TweetPopup from '../components/TweetPopup.vue'
-// import Lightbox from '../components/Lightbox'
+import TweetPopup from '../components/TweetPopup.vue'
+import Lightbox from '../components/Lightbox/index.vue'
 import { mapGetters } from 'vuex'
 
 export default {
   name: 'Layout',
   components: {
     Sidebar,
-    //  TweetPopup,
+     TweetPopup,
     BaseIcon,
      Trends,
     SearchBar,
-    // Lightbox
+   Lightbox
   },
   computed: {
     ...mapGetters([

@@ -1,12 +1,12 @@
 <template>
     <div class="loading-screen">
         <svg
-        xmlns="http//www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         style="margin: auto; background: transparent none repeat scroll 0% 0%; display: block; shape-rendering: auto;"
         width="50px"
         height="50px"
-        view-box="0 0 100 100"
+        viewBox="0 0 100 100"
         preserveAspectRatio="zmidYMid"
         >
         <circle
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss">
-// @import '@/assets/theme/colors.scss';
+@import '../assets/theme/colors.scss';
 .loading-screen{
     position: fixed;
     top: 0;
@@ -50,6 +50,6 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-color: rgba($color: $color-light-gray, $alpha: 0.3);
+    background-color: rgba($color: $color-light-gray, $alpha: 0.3);
 }
 </style>

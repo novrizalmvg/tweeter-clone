@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import AddTweet from '../components/AddTweet'
-import BaseIcon from '../components/BaseIcon'
+import AddTweet from '../components/AddTweet/index.vue'
+import BaseIcon from '../components/BaseIcon/index.vue'
 
 export default {
     name: 'TweetPopup',

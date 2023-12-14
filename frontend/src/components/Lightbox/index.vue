@@ -47,7 +47,7 @@ class="lightbox-current-image"
 </template>
 
 <script>
-import BaseIcon from '../components/BaseIcon'
+import BaseIcon from '../../components/BaseIcon/index.vue'
 
 export default {
     name: 'Lightbox',
@@ -96,7 +96,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/theme/colors.scss';
+@import '../../assets/theme/colors.scss';
 
 .lightbox{
     position: fixed;
